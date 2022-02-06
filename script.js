@@ -45,9 +45,10 @@ const play = (coordinate) => {
   const value = marker ? 'O' : 'X'
   const field = document.getElementById(board[coordinate].id)
   field.innerText = value
-
   board[coordinate].value = value
+
   marker = !marker
+
   setTimeout(() => checkWin(), 10)
 }
 
@@ -71,5 +72,18 @@ const checkTie = () => {
   const tie = board.every(field => field.value !== undefined)
   if (tie) {
     return alert("It's a tie!!")
+  }
+}
+
+const reset = () => {
+  const confirmation = confirm("Are you sure?")
+  console.log(confirmation)
+  if (confirmation) {
+    board.forEach(field => {
+      field.value = undefined
+      const domField = document.getElementById(field.id)
+      domField.innerHTML = "&nbsp;"
+      marker = false
+    })
   }
 }
