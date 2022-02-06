@@ -37,6 +37,10 @@ const winScenarios = [
 
 let marker = false
 
+const gameBoard = document.getElementById("board");
+const htmlArray = board.map((field, index) => `<div class="grid-item" id="${field.id}" onclick="play(${index})">&nbsp;</div>`);
+gameBoard.innerHTML = htmlArray.join("")
+
 const play = (coordinate) => {
   if (board[coordinate].value !== undefined) {
     return alert('Field occupied!')
