@@ -2,12 +2,41 @@
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
+  margin: 0 50px;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+.nes-container {
+  border: none;
+}
+
+#f02,
+#f12,
+#f22,
+#f01,
+#f11,
+#f21 {
+  border-bottom: 0.1rem solid black;
+}
+
+#f02,
+#f12,
+#f01,
+#f11,
+#f00,
+#f10 {
+  border-right: 0.1rem solid black;
+}
+
+#title {
+  font-size: 45px;
+  background: -webkit-linear-gradient(#f7d51d, #e76e55);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -1,31 +1,31 @@
 
 const board = [
   {
-    id: '02', value: undefined
+    id: 'f02', value: undefined
   },
   {
-    id: '12', value: undefined
+    id: 'f12', value: undefined
   },
   {
-    id: '22', value: undefined
+    id: 'f22', value: undefined
   },
   {
-    id: '01', value: undefined
+    id: 'f01', value: undefined
   },
   {
-    id: '11', value: undefined
+    id: 'f11', value: undefined
   },
   {
-    id: '21', value: undefined
+    id: 'f21', value: undefined
   },
   {
-    id: '00', value: undefined
+    id: 'f00', value: undefined
   },
   {
-    id: '10', value: undefined
+    id: 'f10', value: undefined
   },
   {
-    id: '20', value: undefined
+    id: 'f20', value: undefined
   }
 ]
 
@@ -48,7 +48,7 @@ const play = (coordinate) => {
 
   board[coordinate].value = value
   marker = !marker
-  setTimeout(() => checkWin(), 0)
+  setTimeout(() => checkWin(), 10)
 }
 
 const checkWin = () => {
