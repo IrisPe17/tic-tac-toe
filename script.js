@@ -77,7 +77,6 @@ const checkTie = () => {
 
 const reset = () => {
   const confirmation = confirm("Are you sure?")
-  console.log(confirmation)
   if (confirmation) {
     board.forEach(field => {
       field.value = undefined
