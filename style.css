@@ -20,13 +20,19 @@
   border: none;
 }
 
+.nes-btn {
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+}
+
 #f02,
 #f12,
 #f22,
 #f01,
 #f11,
 #f21 {
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.15rem solid black;
 }
 
 #f02,
@@ -35,7 +41,7 @@
 #f11,
 #f00,
 #f10 {
-  border-right: 0.1rem solid black;
+  border-right: 0.15rem solid black;
 }
 
 #title {
